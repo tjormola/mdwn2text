@@ -2,7 +2,7 @@ This package includes a GNU make file mdwn2text.mk, which can be included in
 makefiles and then used to convert Markdown files to text. See the file
 mdwn2text.mk for documentation.
 
-Copyright: © 2011 Tuomas Jormola <tj@solitudo.net> <http://solitudo.net>
+Copyright: © 2011-2016 Tuomas Jormola <tj@solitudo.net> <http://solitudo.net>
 
 Licensed under the terms of the GNU General Public License Version 2.0.
 License terms are included in the file `COPYING`.

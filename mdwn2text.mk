@@ -36,7 +36,7 @@ MDWN2TEXT		?= submodules/mdwn2text
 MARKDOWN_LUA	?= $(MDWN2TEXT)/markdown.lua
 
 # Command to run the Lua intrepeter
-LUA				?= lua
+LUA				?= lua5.1
 
 # This command reads Markdown from stdin and prints (X)HTML to stdout
 MDWN_TO_HTML	?= $(LUA) $(MARKDOWN_LUA)
