@@ -25,7 +25,7 @@
 #
 # Lynx in default path is required.
 #
-# Copyright: © 2011 Tuomas Jormola <tj@solitudo.net> http://solitudo.net
+# Copyright: © 2011-2016 Tuomas Jormola <tj@solitudo.net> http://solitudo.net
 #
 # Licensed under the terms of the GNU General Public License Version 2.0.
 # License terms are included in the file `COPYING`.
