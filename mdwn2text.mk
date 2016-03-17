@@ -32,23 +32,23 @@
 #
 
 # Location of markdown.lua
-MDWN2TEXT		?= submodules/mdwn2text
-MARKDOWN_LUA	?= $(MDWN2TEXT)/markdown.lua
+MDWN2TEXT      ?= submodules/mdwn2text
+MARKDOWN_LUA   ?= $(MDWN2TEXT)/markdown.lua
 
 # Command to run the Lua intrepeter
-LUA				?= lua5.1
+LUA            ?= lua5.1
 
 # This command reads Markdown from stdin and prints (X)HTML to stdout
-MDWN_TO_HTML	?= $(LUA) $(MARKDOWN_LUA)
+MDWN_TO_HTML   ?= $(LUA) $(MARKDOWN_LUA)
 
 # This command reads (X)HTML from stdin and prints text to stdout
-HTML_TO_TEXT	?= lynx -stdin -dump
+HTML_TO_TEXT   ?= lynx -stdin -dump
 
-MDWN_EXTENSION	?= .mdwn
-TEXT_EXTENSION	?= .txt
-TEXT_FILES		?= $(MDWN_FILES:$(MDWN_EXTENSION)=$(TEXT_EXTENSION))
+MDWN_EXTENSION ?= .mdwn
+TEXT_EXTENSION ?= .txt
+TEXT_FILES     ?= $(MDWN_FILES:$(MDWN_EXTENSION)=$(TEXT_EXTENSION))
 
 mdwn2text: $(TEXT_FILES)
 
 %$(TEXT_EXTENSION): %$(MDWN_EXTENSION)
-	$(MDWN_TO_HTML) < $< | $(HTML_TO_TEXT) > $@
+    $(MDWN_TO_HTML) < $< | $(HTML_TO_TEXT) > $@
